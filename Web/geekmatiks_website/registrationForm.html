@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            header{
+            border-radius: 20px;
+            background-color:#006769 ;
+            height: 100px;
+            color: white; 
+            align-content: center;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            }
+            .mainContainer{
+                margin-top: 80px;
+                margin-left: 35%;
+                align-content: center;
+            }
+            .mainContainer label{
+                font-size: 20px;
+                color: #006769;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .mainContainer input{
+                width: 30%;
+                height: 40px;
+                margin: 5px;
+            }
+            #compatition:active{
+                background-color: #9DDE8B;
+            }
+            #sname:active{
+                background-color: #9DDE8B;
+            }
+            #college:active{
+                background-color: #9DDE8B;
+            }
+            .formlabel{
+                width: 100px;
+                height: 20px;
+            }
+            #Submit{
+                width: 30%;
+                height: 40px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #006769;
+                color: white;
+                margin-top: 20px;
+                
+            }
+            .mainContainer a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>Registration Form</h3>
+        </header>
+        <div class="mainContainer">
+            <div class="formlabel"><label for="sname">Name</label></div>
+            <input type="text" name="sname" id="sname">
+            <br>
+            <div class="formlabel"><label for="college">College</label></div>
+            <input type="text" name="college" id="college">
+            <br>
+            <div class="formlabel"><label for="compatition">Compatitions</label></div>
+            <input type="text" name="compatition" id="compatition">
+            <br>
+            <button id="Submit"><a href="sucessMessage.html">Submit</a></button>
+        </div>
+    </body>
+</html>
