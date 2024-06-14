@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Organic Stores</title>
+        <style>
+            nav{
+                display: flex;
+                border-bottom-style:solid ;
+                border-bottom-color: rgb(210, 213, 216);
+            }
+            #headerLogo img{
+                width: 60px;
+            }
+            ul{
+                margin-top: 30px;
+                margin-left: 50%;
+            }
+            li{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+            }
+            li:nth-child(1){
+                color: #9BEC00;
+            }
+            #ecobag{
+                width: 30px;
+                height: 20px;
+            }
+            .fristPage{
+                display: flex;
+                width: 100%;
+            }
+            .productImg{
+                width: 50%;
+                padding: 130px;
+                background-color: white;
+                background-image:linear-gradient(white,#deeacb);
+                display: grid;
+                place-items:center;
+            }
+            .productImg img{
+                width: 70%;
+                height: 140%;
+            }
+            .productName{
+                width: 50%;
+                padding: 40px;
+                background-color: white;
+                background-image:linear-gradient(white,#deeacb);
+                /*background-image: url(../../SRC/branch.jpg);*/
+            }
+            .nameContent{
+                margin-top: 40%;
+            }
+            .nameContent b{
+                font-size: 40px;
+            }
+            #shopButton{
+                width: 180px;
+                height: 40px;
+                border: none;
+                border-radius: 12px;   
+                color: white;
+                background-color: #9BEC00;
+            }
+            .shoppingContent{
+                width: 100%;
+                border: solid #9BEC00;
+                background-color: black;
+                display: flex;
+            }
+            .container1 {
+                width: 30%;
+                color: white;
+                text-align: justify;
+                align-content: center;
+            }
+            .container1 pre{
+                font-size: 20px
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <figure id="headerLogo">
+                    <img src="../../SRC/organic_store_logo.jpg" alt="">
+                </figure>
+                <ul>
+                    <li>Home</li>
+                    <li>All Products</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Account</li>
+                    <li><img id="ecobag" src="../../SRC/eco-bag.jpg" alt=""></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="fristPage">
+            <div class="productImg">
+                <img src="../../SRC/productImg.png" alt="">
+            </div>
+            <div class="productName">
+                <div class="nameContent">
+                    <h4>Best Quality Products</h4>
+                    <b>Join The Organic</b>
+                    <b>Movement!</b>
+                    <p>Click button to change this text and viwe</p>
+                </div>
+                <button id="shopButton">Shop Button</button>
+            </div>
+        </div>
+        <div class="shoppingContent">
+            <div class="container1">
+                <pre>
+                    Free Shopping
+                      on order
+                    above Rs 599/-
+                </pre>
+            </div>
+        </div>
+    </body>
+</html>
