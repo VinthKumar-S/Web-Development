@@ -70,15 +70,90 @@
                 background-color: black;
                 display: flex;
             }
-            .container1 {
+            .container1,.container2,.container3 {
                 width: 30%;
                 color: white;
                 text-align: justify;
                 align-content: center;
             }
             .container1 pre{
-                font-size: 20px
+                font-size: 15px
             }
+            .container2 pre{
+                font-size: 15px
+            }
+            .container3 pre{
+                font-size: 15px
+            }
+            .secondPage{
+                margin: 40px;
+            }
+            .secondPageTitle{
+                padding: 5px;
+                text-align: center;
+            }
+            .secondPageTitle b{
+                font-size: 30px;
+            }
+            .sellingProduct{
+                display: flex;
+                padding: 10px;
+                width: 100%;
+                
+            }
+            .sellingProduct img{
+                width: 200px;
+            }
+            .product1,.product2,.product3,.product4{
+                /*background-color: aqua;*/
+                text-align: center;
+                margin: 50px;
+            }
+            .agriProduct{
+                display: flex;
+                padding: 10px;
+                background-color: #deeacb;
+                
+            }
+            .farmFriuts,.farmLegumes,.farmVegetables,.farmCereals{
+                padding: 10px;
+                width: 180px;
+                height: 220px;
+                background-color: white;
+                text-align: center;
+                margin: 20px;
+            }
+            .farmFriuts p{
+                text-align: left;
+                margin-left: 23px;
+            }
+            .farmLegumes p{
+                text-align: left;
+                margin-left: 23px;  
+            } 
+            .farmVegetables p{
+                text-align: left;
+                margin-left: 23px;
+            }
+            .farmCereals p{
+                text-align: left;
+                margin-left: 23px;   
+            }
+            .offerContainer{
+                background-color:#deeacb;
+                width: 100%;
+            }
+            .offerContent{
+                padding: 10px;
+                color: white;
+                background-color: black;
+                text-align: center;
+            }
+            .offerLabel{
+                padding: 10px;
+                text-align: center;
+            }
+
         </style>
     </head>
     <body>
@@ -119,6 +194,96 @@
                     above Rs 599/-
                 </pre>
             </div>
+            <div class="container2">
+                <pre>
+                   Payments 
+                   and Data
+                   Security
+                </pre>
+            </div>
+            <div class="container2">
+                <pre>
+                    New Discount
+                      Coupons
+                    Every week
+                </pre>
+            </div>
         </div>
+        <div class="secondPage">
+            <div class="secondPageTitle">
+                <b id="secondTitle">Best Selling Product</b>
+            </div>
+            <div class="sellingProduct">
+                <div class="product1">
+                    <img src="../../SRC/pngwing.com.png" alt="">
+                    <h4>Coffee Powder</h4>
+                    <h5>R5.250</h5>
+                </div>
+                <div class="product2">
+                    <img src="https://m.media-amazon.com/images/I/51dRzlphEGS._SX679_.jpg" style="margin-top: 100px;" alt="">
+                    <h4>hand sanitizer</h4>
+                    <h5>R5.190</h5>
+                </div>
+                <div class="product3">
+                    <img src="https://www.freepnglogos.com/uploads/vegetables-png/fruits-vegetables-exotic-veggies-simply-organic-cart-2.png" style="margin-top: 137px;" alt="">
+                    <h4>Vegetables</h4>
+                    <h5>R5.120</h5>
+                </div>
+                <div class="product4">
+                    <img src="https://turritopsis.in/cdn/shop/files/Kachi-Ghani-Groundnut-Oil.png?v=1706941450&width=800" style="margin-top: 100px;" alt="">
+                    <h4>Oil</h4>
+                    <h5>R5.120</h5>
+                </div>
+            </div>
+            <div class="agriProduct">
+                <div class="farmFriuts">
+                    <h2>Farm Friuts</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet con
+                        adipisicing elit. Doloribus
+                        illum distinctio porro
+                    </p>
+                </div>
+                <div class="farmVegetables">
+                    <h2>Farm Vegetables</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet con
+                        adipisicing elit. Doloribus
+                        illum distinctio porrolegumes
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. 
+                        
+                    </p>
+                </div>
+                <div class="farmLegumes">
+                    <h2>Farm Legumes</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet con
+                        adipisicing elit. Doloribus
+                        illum distinctio.incidunt corporis optio fugiat. 
+                        Cupiditate vel
+                    </p>
+                </div>
+                <div class="farmCereals">
+                    <h2>Farm Cereals</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet con
+                        adipisicing elit. Doloribus
+                        illum distinctio.incidunt corporis optio fugiat. 
+                        Cupiditate vel
+                    </p>
+                </div>
+            </div>
+            <div class="offerContainer">
+                <div class="offerContent">
+                    <h3>Get 25% Percentage Off in Your Frist Purchase!</h3>
+                    <div></div>
+                </div>
+                <div class="offerLabel">
+                    <h4>Try it for Free.No Registration</h4>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
