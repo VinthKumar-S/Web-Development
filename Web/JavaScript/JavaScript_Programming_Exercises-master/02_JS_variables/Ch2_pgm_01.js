@@ -1,6 +1,8 @@
 // Declaring a variable
 
-var score;
+var score
+var  num1=10;
+var num2=20;
 
 /* Further Adventures
  *
