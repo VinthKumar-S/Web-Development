@@ -1,13 +1,15 @@
 // Variables vary
 
 var score;
-score = 100;
+score = 10;
 console.log(score);
 
-score = 150;
+score = 250;
 console.log(score);
 
-
+console.log("Name");
+var myname="Vinith";
+console.log(myname);
 
 /* Further Adventures
  *

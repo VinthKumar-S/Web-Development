@@ -11,6 +11,15 @@ book = {
 console.log(book);
 
 
+var book2;
+
+book2 = {
+    title : "The Lord",
+    author : "Steven",
+    published : 1937
+};
+
+console.log(book2);
 
 /* Further Adventures
  *

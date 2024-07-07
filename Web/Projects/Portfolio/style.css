@@ -1,0 +1,10 @@
+
+.navbar li{
+    margin: 10px;
+}
+.navbar a{
+    color: white;
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+

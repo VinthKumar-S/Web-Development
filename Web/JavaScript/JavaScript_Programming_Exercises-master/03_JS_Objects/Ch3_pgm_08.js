@@ -12,7 +12,14 @@ console.log(book.title);
 console.log(book.author);
 
 
+let book2={
+	title:"The Lord",
+	author:"Ravi",
+	published:1938
+}
 
+console.log(book.title);
+console.log(book2.title);
 /* Further Adventures
  *
  * 1) Log the published property to the console.

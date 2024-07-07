@@ -9,7 +9,16 @@ book = {
     title : bookName
 };
 
+console.log(book)
 
+
+bookName = "The Adventures of Thor";
+
+book = {
+    title : bookName
+};
+
+console.log(book)
 
 /* Further Adventures
  *

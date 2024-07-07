@@ -10,8 +10,13 @@ var questionAndAnswer = {
 	marksForQuestion: 2
 };
 
-
-
+console.log("Question :"+questionAndAnswer.question);
+console.log("Answer 1 :"+questionAndAnswer.answer1);
+console.log("Answer 2 :"+questionAndAnswer.answer2);
+console.log("Answer 3 :"+questionAndAnswer.answer3);
+console.log("Answer 4 :"+questionAndAnswer.answer4);
+console.log("Right Answer :"+questionAndAnswer.correctAnswer);
+console.log("Mark :"+questionAndAnswer.marksForQuestion);
 /* Further Adventures
  *
  * 1) Use console.log to present the question

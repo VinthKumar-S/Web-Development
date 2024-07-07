@@ -9,7 +9,9 @@ names = [ "Kandra", "Dax", "Blinky" ];
 console.log(scores);
 console.log(names);
 
+var akaScores = scores;
 
+console.log(akaScores);
 
 /* Further Adventures
  *

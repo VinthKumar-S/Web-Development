@@ -10,8 +10,13 @@ var location = {
     "elevation" : 47.000
   };
   
+  let geolocation ={
+    city: "San Francisco",
+    state: "California",
+    country: "USA"
+  }
   
-  
+  console.log(geolocation)
   /* Further Adventures
    *
    * 1) Run the program

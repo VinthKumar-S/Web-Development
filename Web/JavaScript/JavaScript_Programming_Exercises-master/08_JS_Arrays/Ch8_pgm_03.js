@@ -8,7 +8,9 @@ console.log("The second score is " + scores[1]);
 console.log("The third score is " + scores[2]);
 console.log("The fourth score is " + scores[3]);
 
+scores[scores.length]=5;
 
+console.log("The last score is "+scores[scores.length-1]);
 
 /* Further Adventures
  *

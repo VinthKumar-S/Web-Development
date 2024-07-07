@@ -13,8 +13,21 @@ player1.score = player1.score + 50;
 
 console.log(player1.name + " has scored " + player1.score);
 
+player1.score = player1.score * 1.10;
+
+console.log(player1.name + " has scored " + player1.score);
 
 
+var player2;
+
+player2 = {
+	  name: "Max",
+	  score: 100
+};
+
+console.log(player2.name + " has scored " + player2.score);
+
+console.log("Total:"+(player1.score+player2.score))
 /* Further Adventures
  *
  * 1) Write code to increase player1's score by 10%.

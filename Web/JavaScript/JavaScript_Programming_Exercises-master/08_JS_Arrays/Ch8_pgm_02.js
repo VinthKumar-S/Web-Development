@@ -10,7 +10,9 @@ var nextYear = [ place3 ];
 console.log(thisYear);
 console.log(nextYear);
 
+var nextYear=[place1,place3];
 
+console.log(nextYear);
 
 /* Further Adventures
  *

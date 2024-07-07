@@ -2,7 +2,10 @@
 
 var score;
 score = 100;
-
+score=200;
+console.log(score);
+score="name";
+console.log(score);
 /* Further Adventures
  *
  * 1) Click Run on the JS Bin Console panel.
