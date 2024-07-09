@@ -1,4 +1,7 @@
-
+* {
+    margin:0;
+    padding: 0;
+}
 .navbar li{
     margin: 10px;
 }
@@ -6,5 +9,23 @@
     color: white;
     font: 1em sans-serif;
     font-weight: bold;
+    margin-left: 20px;
+}
+.qualification{
+    font: 2em oblique;  
+}
+.heading{
+    color: #379777;
+    font-weight: bold;
+}
+.profile_content{
+    margin-top: 200px;
 }
 
+@media only screen and (max-width:425px) {
+    .profile_content{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+}
