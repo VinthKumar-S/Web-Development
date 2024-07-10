@@ -14,7 +14,10 @@
         })
         .then(data =>{
             data.articles.forEach(article => {
-              const content =`<p>${article.description}</p>`;
+              const content =`
+                <h3>${article.title}</h3><br>
+                <img src="${article.urlToImage}" alt="Article Image" style="width:500px;height:auto;">
+                <br><p>${article.description}</p>`;
               document.querySelector(`div`).insertAdjacentHTML('beforeend',content)
             });
         })
