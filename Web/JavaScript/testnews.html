@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Images</title>
+</head>
+<script>  
+      //alert('Fetching news...');
+      fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=25b6f280bb734c7caa5b26785fc98335')
+        .then(response =>{
+          return response.json();
+          //console.log(response)
+        })
+        .then(data =>{
+            data.articles.forEach(article => {
+              const content =`
+                <h3>${article.title}</h3><br>
+                <img src="${article.urlToImage}" alt="Article Image" style="width:500px;height:auto;">
+                <br><p>${article.description}</p>`;
+              document.querySelector(`div`).insertAdjacentHTML('beforeend',content)
+            });
+        })
+    
+  </script>
+<body>
+  <h1>Latest News</h1>
+  <div id="news-container">
+
+  </div>
+</body>
+</html>
