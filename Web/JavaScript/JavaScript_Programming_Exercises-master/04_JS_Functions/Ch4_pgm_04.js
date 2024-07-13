@@ -7,6 +7,13 @@ sayHello = function () {
 };
 
 
+var call = function(){
+    console.log("calling");
+    
+}
+
+sayHello();
+call();
 
 /* Further Adventures
  *

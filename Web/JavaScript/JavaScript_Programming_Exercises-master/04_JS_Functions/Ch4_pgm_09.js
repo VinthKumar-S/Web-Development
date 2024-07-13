@@ -2,6 +2,8 @@
 
 var showMovieInfo;
 
+var movie={title:"Ironman",actors:"RDJ",directors:"Micheal"}
+
 showMovieInfo = function () {
   console.log("Movie information for " + movie.title);
   console.log("------------------------------");
@@ -10,6 +12,7 @@ showMovieInfo = function () {
   console.log("------------------------------");
 };
 
+showMovieInfo();
 
 
 /* Further Adventures

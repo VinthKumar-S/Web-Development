@@ -42,7 +42,35 @@ movie = movie3;
 showMovieInfo();
 
 
+var question1 = {
+    question: "1. Which is object oriended Language.",
+    option1:"C",
+    option2:"C++",
+    option3:"RDBMS"
+};
 
+var question2 = {
+    question: "2. Which is Procedural Language.",
+    option1:"Java",
+    option2:"C++",
+    option3:"C"
+};
+
+
+var showQuiz = function(){
+    console.log(exam.question);
+    console.log("------------------------------");
+    console.log("Option 1." + exam.option1);
+    console.log("Option 2." + exam.option2);
+    console.log("Option 3." + exam.option3);
+    console.log("------------------------------");
+}
+
+var exam = question1;
+showQuiz();
+
+var exam = question2;
+showQuiz();
 /* Further Adventures
  *
  * 1) Create an object to represent

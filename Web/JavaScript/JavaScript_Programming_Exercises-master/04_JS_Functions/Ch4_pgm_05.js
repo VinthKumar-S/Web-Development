@@ -5,6 +5,7 @@ var displayMenu;
 
 findTotal = function () {
 	result = number1 + number2;
+	
 };
 
 displayMenu = function () {
@@ -14,7 +15,17 @@ displayMenu = function () {
 	console.log("(9) Quit");
 };
 
+var number1,number2,result;
 
+number1=10;
+number2=20;
+result=0;
+
+findTotal();
+
+console.log(result);
+
+displayMenu();
 
 /* Further Adventures
  *

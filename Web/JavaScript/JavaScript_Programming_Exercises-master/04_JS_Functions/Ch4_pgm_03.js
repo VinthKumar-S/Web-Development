@@ -16,20 +16,32 @@ sale1.total = sale1.price + sale1.tax;
 sale2.total = sale2.price + sale2.tax;
 sale3.total = sale3.price + sale3.tax;
 
+console.log("----------------------------------------")
 console.log("price = $" + sale1.price);
 console.log("tax @ " + sale1.taxRate + "% = $" + sale1.tax);
 console.log("total cost = $" + sale1.total);
 
+console.log("----------------------------------------")
 console.log("price = $" + sale2.price);
 console.log("tax @ " + sale2.taxRate + "% = $" + sale2.tax);
 console.log("total cost = $" + sale2.total);
 
+console.log("----------------------------------------")
 console.log("price = $" + sale3.price);
 console.log("tax @ " + sale3.taxRate + "% = $" + sale3.tax);
 console.log("total cost = $" + sale3.total);
 
 
+var sale4;
 
+sale4 = {price:150,taxRate:10};
+sale4.tax = sale3.price * sale4.taxRate / 100;
+sale4.total = sale4.price + sale4.tax;
+
+console.log("----------------------------------------")
+console.log("price = $" + sale4.price);
+console.log("tax @ " + sale4.taxRate + "% = $" + sale4.tax);
+console.log("total cost = $" + sale4.total);
 
 /* Further Adventures
  *

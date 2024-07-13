@@ -22,6 +22,18 @@ movie = movie1;
 
 showMovieInfo();
 
+var movie2;
+
+movie2 = {
+  title: "Men In Black",
+  actors: "Will Smith",
+  directors: "Pete Doctor"
+};
+
+movie = movie2;
+
+showMovieInfo();
+
 
 
 /* Further Adventures

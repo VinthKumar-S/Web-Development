@@ -14,7 +14,29 @@ console.log("Actors: " + movie1.actors);
 console.log("Directors: " + movie1.directors);
 console.log("------------------------------");
 
+movie2 = {
+  title: "The Matrix",
+  actors: "Bill Hader",
+  directors: "The Wachowskis"
+  ,year:1999
+};
 
+console.log(movie2)
+console.log(movie1)
+
+const blogPost ={
+  title:"Understanding JavaScript Closures",
+  author:"Jane Doe",
+  content:"JavaScript closures are a fundamental concept that allows functions to access variables from an outer scope, even after the outer function has closed."
+}
+
+function displayBlogPost(blogPost){
+  console.log(blogPost.title);
+  console.log(blogPost.author);
+  console.log(blogPost.content);
+}
+
+displayBlogPost(blogPost);
 
 /* Further Adventures
  *

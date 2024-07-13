@@ -40,6 +40,35 @@ console.log("Actors: " + movie3.actors);
 console.log("Directors: " + movie3.directors);
 console.log("------------------------------");
 
+var movie4 = {
+  title: "Civil War",
+  actors: "Chris  Evan",
+  directors: "Roso Brothers"
+};
+
+console.log("Movie information for " + movie3.title);
+console.log("------------------------------");
+console.log("Actors: " + movie3.actors);
+console.log("Directors: " + movie3.directors);
+console.log("------------------------------");
+
+console.log("After adding movie 4")
+console.log("--------------------")
+
+var franchise = {
+  movie1,
+  movie2,
+  movie3,
+  movie4,
+}
+
+for (let movie in franchise){
+  console.log("Movie information for " + franchise[movie].title);
+  console.log("------------------------------");
+  console.log("Actors: " + franchise[movie].actors);
+  console.log("Directors: " + franchise[movie].directors);
+  console.log("------------------------------");
+}
 
 
 /* Further Adventures
