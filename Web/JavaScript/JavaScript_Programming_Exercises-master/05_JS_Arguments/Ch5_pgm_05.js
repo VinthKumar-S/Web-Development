@@ -13,8 +13,23 @@ square(-2);
 square(1111);
 square(0.5);
 
+function cube(number){
+  return number*number*number;
+}
 
+console.log(cube(2));
+console.log(cube(3));
+console.log(cube(4));
+console.log(cube(5));
 
+function squareRoot(number){
+  return Math.sqrt(number);
+}
+
+console.log("The square root of 9 is "+squareRoot(9));
+console.log("The square root of 9 is "+squareRoot(16));
+console.log("The square root of 9 is "+squareRoot(25));
+console.log("The square root of 9 is "+squareRoot(36));
 /* Further Adventures
  *
  * 1) Define a cube function that cubes

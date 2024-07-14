@@ -4,6 +4,7 @@ var showPlayerName;
 
 showPlayerName = function (playerName) {
     console.log(playerName);
+    console.log("The Count of Letters : "+playerName.length);
 };
 
 showPlayerName("Kandra");

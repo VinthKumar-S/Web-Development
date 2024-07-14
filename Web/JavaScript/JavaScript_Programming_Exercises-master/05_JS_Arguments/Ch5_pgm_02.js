@@ -2,8 +2,11 @@
 
 var msg;
 var showMessage;
+var message;
 
 msg = "It's full of stars!";
+
+message="Today Our Sky "+msg;
 
 showMessage = function () {
 	console.log(message);
