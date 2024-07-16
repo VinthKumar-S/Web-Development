@@ -11,7 +11,11 @@ response = getMessage();
 
 console.log(response);
 
+var getMyMessage;
 
+getMyMessage = function () {
+    return "Start JS";
+};
 
 /* Further Adventures
  *

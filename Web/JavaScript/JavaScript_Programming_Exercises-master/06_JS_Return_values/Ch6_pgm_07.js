@@ -9,6 +9,21 @@ getPlayerName = function (playerName) {
 console.log(getPlayerName("Kandra"));
 
 
+var getPlayerNamePrefixSuffix;
+
+getPlayerNamePrefixSuffix = function (playerName) {
+    return "==== "+playerName+" ====";
+};
+
+console.log(getPlayerNamePrefixSuffix("Kandra"));
+
+var getPlayerNameBorder;
+
+getPlayerNameBorder = function (playerName) {
+    return "|\n"+"|"+playerName+"\n|";
+};
+
+console.log(getPlayerNameBorder("Jahver"));
 
 /* Further Adventures
  *

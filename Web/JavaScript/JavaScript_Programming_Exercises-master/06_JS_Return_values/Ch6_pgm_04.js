@@ -12,7 +12,21 @@ var sum = add(50, 23);
 
 console.log(sum);
 
+var sum = add(add(50, 23),50);
 
+console.log(sum);
+
+var addThree;
+
+addThree = function (number1, number2,number3) {
+	var total = number1 + number2 + number3;
+
+	return total;
+};
+
+var sumThree = addThree(10,20,30);
+
+console.log("Sum of Three:" + sumThree)
 
 /* Further Adventures
  *

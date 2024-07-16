@@ -11,11 +11,17 @@ var showPlayerHealth = function (playerName, playerHealth) {
 var showPlayerPlace = function (playerName, playerPlace) {
     console.log(playerName + " is in " + playerPlace);
 };
+var showLine = function(length){
+    var lines="********************";
+    console.log(lines.substring(0,length));
+}
 
 var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
     console.log("");
 
+    showLine(playerName.length+2)
     showPlayerName(playerName) ;
+    showLine(playerName.length+2)
 
     console.log("----------------------------");
 
