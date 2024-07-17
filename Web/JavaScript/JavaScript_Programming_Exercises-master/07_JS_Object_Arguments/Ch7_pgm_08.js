@@ -3,6 +3,9 @@
 var message = "We choose to go to the Moon!";
 
 console.log(message.substr(3, 12));
+console.log(message.substr(23,25));
+console.log(message.substr(13,14));
+console.log(message.substr(0,9));
 
 
 

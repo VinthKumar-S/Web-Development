@@ -11,7 +11,38 @@ var line = function (lineLength) {
   console.log(line(40));
   console.log(line(50));
   
+  var spaces = function (spaceLength) {
+    var spaces = "                                        "; // 40 spaces
+    spaceLength = Math.max(0, spaceLength);
+    spaceLength = Math.min(40, spaceLength);
+    return spaces.substr(0, spaceLength);
+};
+
+var emptyBox = function (width) {
+    var topBottom = line(width);
+    var middle = "=" + spaces(width - 2) + "=";
+    
+    console.log(topBottom);
+    for (var i = 0; i < 3; i++) {
+        console.log(middle);
+    }
+    console.log(topBottom);
+};
   
+for (var i = -20; i <= 60; i += 10) {
+  console.log("Line length: " + i);
+  console.log(line(i));
+}
+
+console.log("Spaces length: 10");
+console.log('"' + spaces(10) + '"');
+
+console.log("Empty Box of width 12:");
+emptyBox(12);
+
+
+console.log("Empty Box of width 40:");
+emptyBox(40);
   
   /* Further Adventures
    *

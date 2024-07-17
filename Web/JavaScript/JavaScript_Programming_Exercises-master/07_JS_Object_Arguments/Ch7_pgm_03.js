@@ -26,6 +26,30 @@ console.log(getPlanetInfo(planet1));
 console.log(getPlanetInfo(planet2));
 
 
+var buildCar;
+var getCarInfo;
+var car1;
+var car2;
+
+buildCar = function (name,fuel,market,range) {
+    return {
+        name: name,
+        fuel:fuel,
+        market:market,
+        range:range,
+    };
+};
+
+getCarInfo = function (car) {
+    return car.name.toUpperCase() + ": Fuel " + car.fuel;
+};
+
+car1 = buildCar("Toyota", "Hybrid", "Broad", "Low");
+car2 = buildCar("Tesla", "Electric", "Mid", "High");
+
+console.log(getPlanetInfo(planet1));
+console.log(getPlanetInfo(planet2));
+
 
 /* Further Adventures
  *

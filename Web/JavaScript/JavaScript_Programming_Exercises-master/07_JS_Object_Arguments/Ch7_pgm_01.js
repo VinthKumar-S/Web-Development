@@ -3,19 +3,31 @@
 var planet1;
 var getPlanetInfo;
 
-planet1 = {
+var planet2;
+
+planet2 ={
     name: "Jupiter",
     position: 5,
     type: "Gas Giant",
     radius: 69911,
-    sizeRank: 1
+    sizeRank: 1  
+}
+
+planet1 = {
+    name: "Earth",
+    position: 6,
+    type: "Bioshpere",
+    radius: 68890,
+    sizeRank: 2
 };
 
 getPlanetInfo = function (planet) {
-    return planet.name + ": planet number " + planet.position;
+    return planet.name + ": planet number " + planet.position + ": planet type " + planet.type + ": planet radius " + planet.radius + ": planet size " + planet.size;
 };
 
 console.log(getPlanetInfo(planet1));
+console.log(getPlanetInfo(planet2))
+
 
 
 

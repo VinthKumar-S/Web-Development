@@ -2,9 +2,17 @@
 
 var planet = "Jupiter";
 var bigPlanet = planet.toUpperCase();
+var smallPlanet = planet.toLowerCase();
 
-console.log(planet + " becomes " + bigPlanet);
+var getBig = function (){
+    return planet + " becomes Big " + bigPlanet;
+}
+var getSmall = function (){
+    return planet + " becomes Small " + smallPlanet;
+}
 
+console.log(getBig());
+console.log(getSmall());
 
 
 /* Further Adventures

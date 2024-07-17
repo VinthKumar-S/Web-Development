@@ -10,6 +10,16 @@ var showSmaller = function (num1, num2) {
 showSmaller(12, 3);
 showSmaller(-10, 3);
 
+var showLarger = function (num1, num2, num3) {
+    var smaller = Math.min(num1, num2 , num3);
+    var larger = Math.max(num1, num2, num3);
+
+    console.log(larger + " is larger than " + smaller);
+};
+
+showLarger(12, 3, 10);
+showLarger(-10, 3, 30);
+
 
 
 /* Further Adventures

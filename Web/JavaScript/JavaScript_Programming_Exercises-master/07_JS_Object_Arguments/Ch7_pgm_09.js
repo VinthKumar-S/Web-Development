@@ -6,7 +6,16 @@ var charIndex = message.indexOf("M");
 
 console.log(message.substr(charIndex, 3));
 
+var goIndex = message.indexOf("go")
+console.log("Index of 'go': "+goIndex);
 
+var chooseIndex = message.indexOf("choose");
+console.log("Word 'choose' : " + message.substring(chooseIndex,6) );
+
+var lastIndex = message.lastIndexOf("oo");
+console.log("Last index of 'oo': " + lastIndex)/
+
+console.log(message.substring(goIndex,message.length-goIndex));
 
 /* Further Adventures
  *

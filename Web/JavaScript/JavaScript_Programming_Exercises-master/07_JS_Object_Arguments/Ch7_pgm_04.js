@@ -4,6 +4,8 @@ var point1;
 var point2;
 var move;
 var showPoint;
+var reflectX;
+var rotate90;
 
 move = function (point, change) {
     return {
@@ -16,6 +18,20 @@ showPoint = function (point) {
     console.log("( " + point.x + " , " + point.y + " )");
 };
 
+reflectX = function(point){
+    return {
+        x: point.x,
+        y: -point.y
+    }
+}
+
+reflect90 = function (point) {
+    return {
+        x : -point.y,
+        y: point.x
+    }
+}
+
 point1 = { x : 2, y : 5 };
 
 point2 = move(point1, { x : 4, y : -2 });
@@ -24,7 +40,13 @@ showPoint(point1);
 console.log("Move 4 across and 2 down");
 showPoint(point2);
 
+var reflectedPoint = reflectX(point2);
+console.log("Reflect in x-axis");
+showPoint(reflectedPoint);
 
+var rotatedPoint = rotate90(point1);
+console.log("Rotate 90 degree anticlockwise");
+showPoint(rotatedPoint);
 
 /* Further Adventures
  *
