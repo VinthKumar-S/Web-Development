@@ -22,6 +22,11 @@
     margin-top: 200px;
 }
 
+.git-link{
+    background-color: #379777;
+    color: white;
+}
+
 @media only screen and (max-width:425px) {
     .profile_content{
         margin-top: 50px;
