@@ -6,17 +6,18 @@
     <title>Document</title>
     <style>
         #bg{
+            position: relative;
             background-image:url('thought-catalog-wyEinDRV88I-unsplash.jpg');
             height: 100vh;
             background-size: 100% 100vh;
-            transition: 3s;
+            transition: 2s;
         }
         .image{
             height: 40px;
         }
         .titles{
             position: absolute;
-            top: 70%;
+            top: 50%;
             left:10%;
         }
         #content{
@@ -26,6 +27,21 @@
             color: white;
             text-shadow: 5px 5px black;
         }
+        .imageOption{
+            position: absolute;
+            top: 500px;
+            left: 400px;
+            width: 200px;
+            height: 100px;
+            display: flex;
+        }
+        .imageOption img{
+            width: 200px;
+            margin-right:5px ;
+        }
+        .optionBorder{
+            border: 6px solid white;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +49,7 @@
         <img  id="next" class="image" onclick="next()" src="forword.png" style="width: 50px;" alt="">
         <img  id="prev" class="image" onclick="pre()" src="backword.png" style="width: 50px;" alt="">
         <div class="titles"><span id="content">NEWYORK</span></div>
+        <div id="imgOption" class="imageOption"></div>
     </div>
     <script>
         let index=0;
@@ -40,6 +57,18 @@
         let img=['thought-catalog-wyEinDRV88I-unsplash.jpg','laia-nunez-AThSwV0LsCQ-unsplash.jpg','robert-bye-a0x0H8Wq87Y-unsplash.jpg','tianshu-liu-aqZ3UAjs_M4-unsplash.jpg'];
         const bg=document.getElementById('bg');
         const text=document.getElementById('content');
+        const options=document.getElementById('imgOption');
+        
+        num=0;
+        item="item";
+        img.forEach(name=>
+        {
+            id=item+num;
+            options.innerHTML += `<img id="${id}" src="${name}"">`
+            //console.log(id);
+            num++; 
+        });
+
         function next()
         {
             index++;
@@ -52,6 +81,7 @@
                 text.innerHTML=content[index];
                 bg.style.backgroundImage='url("'+img[index]+'")';
             }
+            setBorder(item+index,index);
         }
         function pre(){
             if(index != 0)
@@ -61,6 +91,21 @@
                 bg.style.backgroundImage='url("'+img[index]+'")';
                // console.log(index);   
             }
+            setBorder(item+index,index);
+        }
+        function setBorder(optionId,index){
+            //alert(optionId);
+            removeValue=index-1;
+            if(index == 0)
+            {
+                removeValue=img.length-1;
+            }
+            removeId="item"+(removeValue);
+            alert(removeId);
+            list = document.getElementById(removeId).classList;
+            list.remove("optionBorder");
+            list = document.getElementById(optionId).classList;
+            list.add("optionBorder");
         }
     </script>
 </body>
