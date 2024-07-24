@@ -81,7 +81,7 @@
                 text.innerHTML=content[index];
                 bg.style.backgroundImage='url("'+img[index]+'")';
             }
-            setBorder(item+index,index);
+            setBorder(item+index,index,true);
         }
         function pre(){
             if(index != 0)
@@ -89,19 +89,19 @@
                 index--;
                 text.innerHTML=content[index];
                 bg.style.backgroundImage='url("'+img[index]+'")';
-               // console.log(index);   
+               // console.log(index);
+               setBorder(item+index,index,false);   
             }
-            setBorder(item+index,index);
         }
-        function setBorder(optionId,index){
-            //alert(optionId);
-            removeValue=index-1;
+        function setBorder(optionId,index,pos){
+           // alert(optionId);
+           (pos)? removeValue=index-1:removeValue=index+1;
             if(index == 0)
             {
-                removeValue=img.length-1;
+                (pos)?removeValue=img.length-1:removeValue=1;
             }
             removeId="item"+(removeValue);
-            alert(removeId);
+            //alert(removeId);
             list = document.getElementById(removeId).classList;
             list.remove("optionBorder");
             list = document.getElementById(optionId).classList;
