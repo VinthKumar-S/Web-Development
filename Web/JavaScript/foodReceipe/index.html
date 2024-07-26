@@ -6,34 +6,88 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
     
-</script>
 <body>
     <header class="navbar">
         <nav>
             <ul>
                 <li>Home</li>
-                <li>Menu</li>
+                <li><a href="myAccount.html">MyAccount</a></li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>
         </nav>
     </header>
-    <div class="rowRecepie"><h3>Recipe Categories</h3></div>
-    <div class="main">
-        <div class="container">
-            <!--<figure>-->
+    <div class="rowRecepie" id="rowRecepie"><h3>Recipe Categories</h3></div>
+    <div id="foodTypes" class="foodTypes">
+        <!--<div class="container">
                 <img src="https://i.pinimg.com/564x/56/88/f4/5688f4ed1bdded29ca8d8cca6e494914.jpg" alt="">
-            <!--</figure>-->
             <div class="foodstyle">
                 <p>American</p>
             </div>
-        </div>
+        </div>-->
     </div>
     <footer>
         <div class="copyRigtLogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z"/></svg></div>
         <p>V Softwares</p>
     </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        let foodType = [
+            {
+                img:"https://i.pinimg.com/564x/56/88/f4/5688f4ed1bdded29ca8d8cca6e494914.jpg",
+                name:"Sanwich",
+                type:"American",
+                id:1
+            },
+            {
+                img:"https://i.pinimg.com/564x/6f/32/1b/6f321b4c3e133055c9b91b4d196ef5b1.jpg",
+                name:"Pancakes",
+                type:"American",
+                id:2
+            },
+            {
+                img:"https://i.pinimg.com/564x/c8/10/e8/c810e86d7ab596dc2b0f06c5f7cdd194.jpg",
+                name:"Arepas",
+                type:"American ",
+                id:3
+            },
+            {
+                img:"https://i.pinimg.com/564x/6e/e2/f9/6ee2f92b6d47f98ec6418e2b2371650a.jpg",
+                name:"Burger",
+                type:"American",
+                id:4
+            },
+            {
+                img:"https://i.pinimg.com/564x/8d/88/f0/8d88f0c9d19215471629ca5c257bb06b.jpg",
+                name:"Pizza",
+                type:"American",
+                id:5
+            },
+        ]
+    
+        const foodTypes=document.getElementById('foodTypes');
+        if(foodTypes){
+            foodType.forEach(items=>{
+            foodTypes.innerHTML+=`        
+            <div class="container">
+                    <img src="${items.img}" alt="">
+                <div class="foodstyle">
+                    <p>${items.type}</p>
+                    <button class="addCart" onclick=addCart(${items.id})>Add Cart</button>
+                </div>
+            </div>`
+        })
+        }
+
+        let arr=[];
+        let addCart=(id)=>{
+            console.log(foodType[id-1]);
+            arr.push(foodType[id-1])
+            //alert(arr)
+            localStorage.setItem("Product Id",JSON.stringify(arr))
+        }
+    </script>
 </body>
 </html>

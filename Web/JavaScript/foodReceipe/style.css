@@ -7,6 +7,9 @@ ul li{
     display: inline;
     margin: 20px;
 }
+li a{
+    text-decoration: none;
+}
 body{
     margin: 0;
     background-color: #F8EDED;
@@ -24,7 +27,7 @@ footer{
     margin-top: 13px;
     margin-right: 10px;  
 }
-.main{
+.foodTypes{
     display: flex;
     margin-left: 1.5%;
 }
@@ -50,4 +53,20 @@ footer{
 .foodstyle p{
     margin-left:13%;
     border-radius: 50px;
+}
+
+.foodstyle {
+    display: flex;
+}
+.addCart{
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F8EDED;
+}
+.addCart:hover{
+    background-color: #B43F3F;
 }

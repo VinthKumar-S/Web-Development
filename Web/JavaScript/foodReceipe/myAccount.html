@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="foodTypes" class="foodTypes"></div>
+    <script>
+        let data=JSON.parse(localStorage.getItem("Product Id"));
+        let pro = document.getElementById("foodTypes");
+        for(val of data){
+            pro.innerHTML +=`
+                <div class="container">
+                    <img src="${val.img}" alt="">
+                    <div class="foodstyle">
+                        <p>${val.type}</p>
+                        <button class="addCart" onclick=addCart(${val.id})>Add Cart</button>
+                    </div>
+                </div>`
+        }
+    </script>
+</body>
+</html>
