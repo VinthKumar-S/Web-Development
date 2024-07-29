@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyAccount</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myAccount.html">MyAccount</a></li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="rowRecepie" id="rowRecepie"><h3>Your Orders</h3></div>
     <div id="foodTypes" class="foodTypes"></div>
+    <footer>
+        <div class="copyRigtLogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z"/></svg></div>
+        <p>V Softwares</p>
+    </footer>
     <script>
         let data=JSON.parse(localStorage.getItem("Product Id"));
         let pro = document.getElementById("foodTypes");
@@ -17,7 +32,6 @@
                     <img src="${val.img}" alt="">
                     <div class="foodstyle">
                         <p>${val.type}</p>
-                        <button class="addCart" onclick=addCart(${val.id})>Add Cart</button>
                     </div>
                 </div>`
         }

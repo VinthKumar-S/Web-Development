@@ -11,10 +11,11 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="myAccount.html">MyAccount</a></li>
                 <li>About</li>
                 <li>Contact</li>
+                <li><button id="enableDark">Dark</button></li>
             </ul>
         </nav>
     </header>
@@ -88,6 +89,15 @@
             //alert(arr)
             localStorage.setItem("Product Id",JSON.stringify(arr))
         }
+
+        
+        let darkE=document.getElementById('enableDark');
+        darkE.addEventListener("click",function(){
+           document.body.style.backgroundColor="#173B45";
+           
+           //alert();
+        });
+
     </script>
 </body>
 </html>
