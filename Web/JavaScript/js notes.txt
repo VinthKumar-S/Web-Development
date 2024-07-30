@@ -1,0 +1,95 @@
+// ds method spread
+
+let [a,b,k,...c]=[1,2,3,4,5]
+
+// merging an array 
+
+let arr=[1,2,3,4,5]
+let arr1=[3,5,31,6,5]
+let mergarr=[...arr,...arr1];
+console.log(mergarr);
+
+// spread single value
+
+let arr=[12,5,8,0,2]
+
+function display(a,b,...c)
+{
+
+}
+
+diplay(...arr);
+
+
+//Event Listeners
+//dom.addEventListener('event',()=>{
+
+dom.addEventListener('click',()=>{
+	alert();
+})
+
+//object key structure -> spread collection of data
+let obj ={
+	name:"Naveen",
+	age:21,
+	email:"naveen@gmail.com"
+}
+
+let {name,rem}=obj
+
+let {name..rem}=obj	
+
+// query selector = get data from css
+
+let btn = document.querySelector(".container button");
+
+//synchornos waiting
+//asyn not wait
+
+setTimeout(()=>{
+	console.log("one");
+},1000)
+
+			//timeout is async function
+setTimeout(()=>{
+	console.log("one");
+})
+
+// resolve and reject
+
+
+//execute one by one sync
+// execute parallel async
+
+let pro = new Promise((res,rej){
+	if(data)
+	{
+		res("success");
+	}
+	else{
+		rej("uncaught");
+	}
+	
+}) 
+
+pro.then((data)=>{
+	console.log(data)
+})
+.catch((err)=>console.log(err))
+
+
+//act as break 
+
+setInterval(()=>{
+	console.log("one")
+},5000)
+
+//async
+
+async function myfun(){
+	return await "hello"
+}
+
+console.log(myfun());
+
+
