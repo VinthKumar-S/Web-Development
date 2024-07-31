@@ -92,4 +92,18 @@ async function myfun(){
 
 console.log(myfun());
 
+// normal js is act as base
+// promise is utilize the fetch api
+
+fetch('')
+.then((data)=>data.json())
+.then((data)=>{
+
+})
+
+
+
+
+
+
 
